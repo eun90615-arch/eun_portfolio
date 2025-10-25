@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 /* 공통 */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 :root {
     /* color */
     --main: #104eff;
@@ -16,19 +20,19 @@
     --bg: #f3f6ff;
 
     /* 간격 */
-    --contentmargin: 60px;
+    --contentmargin: 6rem; /* 60px */
 
     /* 폰트사이즈 */
-    --h1: 50px;
-    --h2: 40px;
-    --h3: 34px;
-    --subtitle: 30px;
-    --txtM_1: 28px;
-    --txtR_1: 24px;
-    --txtR_2: 22px;
-    --txtR_3: 20px;
-    --txtS_1: 18px;
-    --txtS_2: 16px; 
+    --h1: 5rem;      /* 50px */
+    --h2: 4rem;      /* 40px */
+    --h3: 3.4rem;    /* 34px */
+    --subtitle: 3rem;/* 30px */
+    --txtM_1: 2.8rem;/* 28px */
+    --txtR_1: 2.4rem;/* 24px */
+    --txtR_2: 2.2rem;/* 22px */
+    --txtR_3: 2rem;  /* 20px */
+    --txtS_1: 1.8rem;/* 18px */
+    --txtS_2: 1.6rem;/* 16px */ 
 }
 html, body {
     scroll-behavior: smooth;
@@ -38,14 +42,14 @@ html, body {
   scroll-snap-stop: normal !important;
 }
 .innerBox {
-    max-width: 1440px;
+    max-width: 144rem; /* 1440px */
     margin: 0 auto;
 }
 
 .subtitle {
     font-size: var(--h2);
     font-weight: 500;
-    margin: 140px 0 0 0;
+    margin: 14rem 0 0 0;
     display: inline-block;
 }
 
@@ -53,21 +57,21 @@ html, body {
 header {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 240px;
+    padding: 0 24rem;
     box-sizing: border-box;
     z-index: 10;
 }
 
 header ul {
     font-size: var(--txtR_2);
-    font-weight: 500;
+    font-weight: 50rem;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 6rem;
 }
 
 header h1 {
@@ -101,7 +105,7 @@ header.fixed{
     scroll-snap-stop: always;
 }
 .mainVisual .innerBox {
-    margin-top: -150px;
+    margin-top: -15rem;
 }
 
 .mainVisual .innerBox .titleBox p {
@@ -113,8 +117,11 @@ header.fixed{
 
 .mainVisual .innerBox .titleBox h2 {
     width: 100%;
-    height: 96px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9.6rem;
+    margin-bottom: 2rem;
 }
 
 /* about */
@@ -131,26 +138,26 @@ header.fixed{
 }
 
 .about figure {
-    margin-left: -200px;
-    width: 674px;
+    margin-left: -20rem;
+    width: 67.4rem;
 }
 
 .about .aboutBox {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 5rem;
 }
 
 .about .aboutBox .txtBox .aboutText li:first-child ul {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .about .aboutBox .txtBox .aboutText li span {
     font-size: var(--subtitle);
     font-weight: 500;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .about .aboutBox .txtBox .aboutText li ul li {
@@ -161,7 +168,7 @@ header.fixed{
 }
 
 .about .aboutBox .txtBox .aboutText {
-    width: 800px;
+    width: 80rem;
     /* display: grid;
             grid-template-columns: repeat(2, auto); */
     flex-wrap: wrap;
@@ -173,7 +180,7 @@ header.fixed{
 
 .about .aboutBox .txtBox .aboutText>li {
     width: calc(100%/2);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 /* design ======================= */
@@ -200,17 +207,17 @@ header.fixed{
 }
 
 .design .innerBox .subtitle {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .design .innerBox .designBox {
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 2rem;
 }
 .design .innerBox .left ul {
-    margin-top: 58px;
+    margin-top: 5.8rem;
 }
 
 .design .innerBox .left ul li {
@@ -220,10 +227,10 @@ header.fixed{
     color: #a2a2a2;
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 2rem;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .design .innerBox .left ul li:before {
@@ -270,7 +277,7 @@ header.fixed{
 .design .right {
     width: 75%;
     position: absolute;
-    top: 200px;
+    top: 20rem;
     right: 0;
 }
 
@@ -278,7 +285,7 @@ header.fixed{
     font-size: var(--txtM_1);
     font-weight: 600;
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
 }
 
 .design .right .img_txt p {
@@ -288,7 +295,7 @@ header.fixed{
 
 /* swiper */
 .swiper .swiper-wrapper {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .swiper .swiper-wrapper .swiper-slide figure { 
@@ -296,8 +303,8 @@ header.fixed{
     aspect-ratio: 1 / 1;      /* 정사각형 유지 */
     overflow: hidden;
     border-radius: 8%;
-    margin-bottom: 24px;
-    margin-top: 20px;
+    margin-bottom: 2.4rem;
+    margin-top: 2rem;
     cursor: pointer;
 }
 
@@ -313,11 +320,12 @@ header.fixed{
 
 /* pagination */
 .pagination {
-    width: 120px;
-    height: 40px;
+    width: 12rem;
+    height: 4rem;
     position: absolute;
     top: 0;
     right: 20%;
+    
 }
 
 .swiper-button-next:after,
@@ -332,7 +340,8 @@ header.fixed{
     top: 30%;
     left: 30%;
     bottom: auto;
-    width: 60px;
+    width: 6rem;
+    font-size: var(--txtS_2);
 }
 
 /* 탭 */
@@ -363,18 +372,18 @@ header.fixed{
     display: flex;
     justify-content:flex-start;
     align-items:flex-end;
-    margin: 138px 0 120px;
+    margin: 13.8rem 0 12rem;
 }
-.coding .videoBox{ width: 180px; height: 90px; margin-left: 20px;}
+.coding .videoBox{ width: 18rem; height: 9rem; margin-left: 2rem;}
 
 .coding .left {
-    margin: 0 100px 0 0;
+    margin: 0 10rem 0 0;
 }
 
 .coding .left strong {
     font-size: var(--h2);
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     display: block;
 }
 
@@ -391,7 +400,7 @@ header.fixed{
 .coding .contWrap {
     display: flex;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 10rem;
     align-items: center;
 }
 
@@ -404,7 +413,7 @@ header.fixed{
 
 #scrollArea {
     /* 스크롤 트리거가 걸릴 실제 긴 영역 */
-    margin: 114px 0;
+    margin: 11.4rem 0;
     padding: 0;
     list-style: none;
 }
@@ -412,7 +421,7 @@ header.fixed{
 .coding .right h3 {
     font-size: var(--h3);
     font-weight: 500;
-    margin-bottom: 44px;
+    margin-bottom: 4.4rem;
     display: block;
 }
 
@@ -422,12 +431,12 @@ header.fixed{
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     align-items: start;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 /* 왼쪽 화면: 항상 화면높이 100포, 내부는 스크롤없이 고정 */
 .left .panel {
-    border-radius: 16px;
-    padding: 30px;
+    border-radius: 1.6rem;
+    padding: 3rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -445,7 +454,7 @@ header.fixed{
 @media (min-width: 1025px) {
     .reveal {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(2.4rem);
     }
 }
 
@@ -462,7 +471,7 @@ header.fixed{
     }
 }
 .nothing {
-    height: 1000px;
+    height: 100rem;
     background: blue;
 }
 
@@ -473,7 +482,7 @@ header.fixed{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 40px;
+    padding: 4rem 4rem;
 }
 .coding .right .sec span {
     font-size: var(--h3);
@@ -488,24 +497,24 @@ header.fixed{
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background: #bdc4db;
 }
 .coding .right .btnWrap {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 14px;
-    margin-top: 18px;
+    gap: 1.4rem;
+    margin-top: 1.8rem;
 }
 .coding .right .btnWrap .btn {
     font-size: var(--txtR_2);
     font-weight: 500;
-    padding: 18px 26px;
+    padding: 1.8rem 2.6rem;
     box-sizing: border-box;
     background: var(--black);
     color: var(--white);
-    border-radius: 14px;
+    border-radius: 1.4rem;
 }
 .coding .right .btnWrap .code{
     background: #777;
@@ -532,35 +541,35 @@ header.fixed{
 }
 
 .contact .innerBox .subtitle {
-    margin: 140px 0 200px 0;
+    margin: 14rem 0 20rem 0;
 }
 
 .contact .innerBox span {
     display: block;
     font-size: var(--h2);
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .contact .innerBox > p {
     font-size: var(--subtitle);
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .contact .innerBox>a {
     margin: 0 auto;
     display: block;
-    width: 164px;
-    height: 60px;
+    width: 16.4rem;
+    height: 6rem;
     font-size: var(--txtR_2);
     font-weight: 500;
-    border-radius: 14px;
+    border-radius: 1.4rem;
     color: #104eff;
     background: #fff;
     text-align: center;
-    padding: 16px 20px;
+    padding: 1.6rem 2rem;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
@@ -575,9 +584,9 @@ header.fixed{
 
 .contact .innerBox>a::after{
     content: '';
-    width: 10px;
-    height: 22px;
-    margin: 1px auto 0;
+    width: 1rem;
+    height: 2.2rem;
+    margin: 0.1rem auto 0;
     background: url(../img/contact_btn_arrow.png) no-repeat center/contain;
 }
 .contact .innerBox>a:hover::after{

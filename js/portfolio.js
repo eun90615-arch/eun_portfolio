@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 /* ========================================================== */
 
 /* from() -> 처음에 opacity:0, y:50 에서 시작 -> 현재 원래 위치와 불투명도 자연스럽게 나타남 */
-gsap.from('.title img', {
+gsap.from('.title figure', {
     opacity: 0,
     y: 50,
     duration: 0.8,
