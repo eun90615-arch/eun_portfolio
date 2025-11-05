@@ -1,4 +1,26 @@
 @charset "utf-8";
+@media screen and (max-width: 1320px) {
+    .about .aboutBox {
+        flex-direction: column;
+    }
+
+    .about figure {
+        margin: 0 auto;
+    }
+
+    .about figure img {
+        width: 100%;
+        padding-right: 3.3rem;
+    }
+
+    .about .aboutBox {
+        flex-direction: column;
+    }
+
+    .about .aboutBox .txtBox {
+        margin: 0 auto;
+    }
+}
 
 /* 태블릿 */
 @media screen and (max-width: 1024px) {
@@ -8,7 +30,9 @@
 
     html {
         font-size: 56.25%;
+        /* 1rem = 9px */
     }
+
 
     .subtitle {
         padding: 12rem 0 6rem;
@@ -17,9 +41,25 @@
         text-align: center;
     }
 
-    /* 1rem = 9px */
-    header {
-        padding: 0 32px;
+    /* header */
+    header .PCgnb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.5rem;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+
+
+    .about {
+        margin: 0 auto;
     }
 
     .innerBox {
@@ -31,49 +71,158 @@
         margin: 0 auto;
     }
 
+    .about figure img {
+        width: 100%;
+        padding-right: 3.3rem;
+    }
+
     .about .aboutBox {
         flex-direction: column;
     }
 
+    .about .aboutBox .txtBox {
+        margin: 0 auto;
+    }
+
     /* design */
-    .design .innerBox .subtitle {
-        margin-bottom: 0;
+    .design .designlist ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vw;
     }
 
-    .design .innerBox .designBox .left {
-        display: block;
-        width: 100%;
-    }
-
-    .design .innerBox .left ul {
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-    }
-
-    .design .right {
-        width: 100%;
-        position: absolute;
-        top: 50rem;
-        left: 3.5rem;
+    /* HTML */
+    .coding #pinPanel {
+        min-height: 500px;
     }
 }
-@media (max-width: 480px) {
-  html { font-size: 43.75%; } /* 1rem = 7px */
-.mainVisual .innerBox .titleBox{
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+        /* 1rem = 8px */
+    }
+
+    /* common */
+    .subtitle {
+        padding: 8.75rem 0 3.75rem;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    /* header */
+    header .mobilegnb {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.952);
+        position: fixed; 
+        top:0; left: 0;
+    }
+
+    header .mobilegnb .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        z-index: 20;
+    }
+
+    /* 메뉴 열릴 때 overlay 표시 */
+    header .mobilegnb .overlay.on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .mobilegnb>img {
+        width: 5rem;
+    }
+
+    header .mobilegnb .submenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        display: block;
+        background: var(--gray3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.5s ease;
+        z-index: 90;
+    }
+
+    header .mobilegnb .submenu.on {
+        right: 0;
+    }
+
+    header .mobilegnb .submenu ul {
+        width: 100%;
+    }
+
+    header .mobilegnb .submenu ul li {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 4;
+        color: var(--white);
+    }
+
+    header .mobilegnb .submenu>img {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    header .PCgnb {
+        display: none;
+    }
+
+    .mainVisual .innerBox .titleBox {
         width: 400px;
     }
 
-.mainVisual .innerBox .titleBox h2 {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 2rem;
-}
-.mainVisual .innerBox .titleBox h2 figure{
-    height: 40px;
-}
-.mainVisual .innerBox .titleBox h2 figure img{
-    height: 100%;
-}
+    .mainVisual .innerBox .titleBox h2 {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .mainVisual .innerBox .titleBox h2 figure {
+        height: 40px;
+    }
+
+    .mainVisual .innerBox .titleBox h2 figure img {
+        height: 100%;
+    }
+
+    /* about */
+    .about figure {
+        width: 55%;
+    }
+
+
+    /* design */
+    .design .designlist ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+
 
 }

@@ -35,37 +35,7 @@ function floatImages() {
 };
 
 
-$(function () {
-    //페이지 스크롤 
-    //$('html, body').animate({ scrollTop: `${stopPosition}` }, 1000, 'easeInOutCubic');
-
-    //tabMenu
-    $('.design .tab li').on('click', function (e) {
-        e.preventDefault();
-
-        let tabIndex = $(this).index();
-
-        $('.design .tab li').removeClass('on');
-        $(this).addClass('on');
-
-        $('.design .designRight .swiper-wrapper').removeClass('on');
-        $('.design .designRight .swiper-wrapper').eq(tabIndex).addClass('on');
-    });
-
-    //스와이퍼
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2.7,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-});
+//탭
 $(function () {
     $('.tab li').on('click', function () {
         let i = $(this).index();
@@ -78,10 +48,22 @@ $(function () {
         $('.tablist').removeClass('on');  // 모든 리스트 숨기기
         $('.tablist').eq(i).addClass('on'); // 해당 리스트만 보이기
     });
+
+    $('.design .tab li').on('click', function (e) {
+        e.preventDefault();
+
+        let tabIndex = $(this).index();
+
+        $('.design .tab li').removeClass('on');
+        $(this).addClass('on');
+
+        $('.design .list').removeClass('on');
+        $('.design .list').eq(tabIndex).addClass('on');
+    });
 });
 
 /* ========================================= */
-gsap.registerPlugin(ScrollTrigger);
+
 
 //1025이상에서는 pin 활성화 -> 반응형 조건을 걸어서 화면크기에 따라 다른 애니메이션을 실행할 수 있게 함.
 const mm = gsap.matchMedia();
@@ -204,42 +186,48 @@ ScrollTrigger.create({
     toggleActions: "play none none reverse"
 });
 
-/* header on ==== */
-$(function () {
-    let sections = $('#mainimg, div[id^="sub_"], #scrollArea'); // 섹션들
-    let navLinks = $('header ul li a'); // 메뉴 링크들
+/* header ==== */
 
-    $(window).on('scroll', function () {
-    let scrollTop = $(this).scrollTop();
-
-    // 맨 위일 경우 모든 active 제거
-    if (scrollTop < $('#sub_about').offset().top - 100) {
-        navLinks.removeClass('active');
-        return;
-    }
-
-    sections.each(function () {
-        let sectionTop = $(this).offset().top - 100;
-        let sectionBottom = sectionTop + $(this).outerHeight();
-        let sectionId = $(this).attr('id');
-
-        if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
-            navLinks.removeClass('active');
-            $('header ul li a[href="#' + sectionId + '"]').addClass('active');
-        }
-    });
-});
-});
-
-/* header 밑으로 내려갔을때 픽스로  */
 $(function () {
     $(window).on('scroll', function () {
         let scrollTop = $(this).scrollTop();
         console.log(scrollTop)
+
         if ($(this).scrollTop() > 100) {
-            $('header').addClass('fixed');
+            $('.PCgnb').addClass('fixed');
         } else {
-            $('header').removeClass('fixed')
+            $('.PCgnb').removeClass('fixed')
         }
     })
+});
+
+/* header mobile */
+
+// 메뉴 열기
+$('.menubtn').on('click', function(){
+  $('.submenu').addClass('on');
+  $('.overlay').addClass('on');
+});
+
+// 메뉴 닫기 (닫기버튼 or 오버레이 클릭 시)
+$('.closebtn, .overlay').on('click', function(){
+  $('.submenu').removeClass('on');
+  $('.overlay').removeClass('on');
+});
+
+// ✅ 메뉴 내 링크 클릭 시 → 해당 섹션 이동 + 메뉴 닫힘
+$('.submenu ul li a').on('click', function(e){
+  e.preventDefault(); // 기본 앵커 이동 막기
+
+  let target = $(this).attr('href'); // 클릭된 링크의 href 추출
+
+  // 메뉴 닫기
+  $('.submenu').removeClass('on');
+  $('.overlay').removeClass('on');
+
+  // 부드럽게 스크롤 이동 (header 높이 보정)
+  let headerHeight = $('header').outerHeight();
+  $('html, body').animate({
+    scrollTop: $(target).offset().top - headerHeight
+  }, 600); // 600ms 동안 이동
 });

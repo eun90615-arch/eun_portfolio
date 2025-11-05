@@ -20,14 +20,31 @@
 
 <body>
     <div class="wrap">
+
         <header>
-            <h1><a href="#mainimg">SUNGEUN KIM</a></h1>
-            <ul>
-                <li><a href="#sub_about">ABOUT</a></li>
-                <li><a href="#sub_design">DESIGN</a></li>
-                <li><a href="#scrollArea">HTML</a></li>
-                <li><a href="#sub_contact">CONTACT</a></li>
-            </ul>
+            <div class="PCgnb">
+                <h1><a href="#mainimg">SUNGEUN KIM</a></h1>
+                <ul>
+                    <li><a href="#sub_about">ABOUT</a></li>
+                    <li><a href="#pinPanel">HTML</a></li>
+                    <li><a href="#sub_design">DESIGN</a></li>
+                    <li><a href="#sub_contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="mobilegnb">
+                <div class="overlay"></div>
+                <h1><a href="#mainimg">SUNGEUN KIM</a></h1>
+                <img class="menubtn" src="img/common_ico_menu_bk.png" alt="">
+                <div class="submenu ">
+                    <img class="closebtn" src="img/common_ico_close.png" alt="">
+                    <ul>
+                        <li><a href="#sub_about">ABOUT</a></li>
+                        <li><a href="#pinPanel">HTML</a></li>
+                        <li><a href="#sub_design">DESIGN</a></li>
+                        <li><a href="#sub_contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <main class="mainVisual" id="mainimg">
             <div class="innerBox">
@@ -109,207 +126,7 @@
                 </div>
             </div>
         </div>
-        <!-- 디자인 파트 -->
-        <div class="design" id="sub_design">
-            <div class="innerBox">
-                <h2 class="subtitle">DESIGN</h2>
-                <div class="designBox">
-                    <div class="left">
-                        <ul class="tab">
-                            <li class="tab-btn on" data-target="homepage">홈페이지</li>
-                            <li class="tab-btn" data-target="uiux">UI/UX</li>
-                            <li class="tab-btn" data-target="banner">EVENT</li>
-                        </ul>
-                    </div>
 
-                </div>
-
-            </div>
-            <div class="right">
-                <!-- 탭1: 홈페이지 -->
-                <div class="swiper mySwiper tablist on" data-group="homepage">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="sub01.html">
-                                <figure><img src="img/design_pc_01.png" alt="SK증권"></figure>
-                            </a>
-                            <div class="img_txt"><span>SK증권</span>
-                                <p>추가개발 &middot; 운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub02.html">
-                                <figure><img src="img/design_pc_02.png" alt="인천대교"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>인천대교</span>
-                                <p>재구축 &middot; 운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub03.html">
-                                <figure><img src="img/design_pc_03.png" alt="한울타리"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>서울시 한울타리</span>
-                                <p>추가개발 &middot; 운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub04.html">
-                                <figure><img src="img/design_pc_04.png" alt="리줌"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>리줌</span>
-                                <p>신규 구축</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub05.html">
-                                <figure><img src="img/design_pc_05.png" alt="강남초이스병원"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>강남초이스 병원</span>
-                                <p>메인 &middot; 서브 고도화</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub06.html">
-                                <figure><img src="img/design_pc_06.png" alt="스마스"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>SMAS</span>
-                                <p>신규 구축</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub07.html">
-                                <figure><img src="img/design_pc_07.png" alt="샤블랑"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>샤블랑</span>
-                                <p>신규 구축</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub08.html">
-                                <figure><img src="img/design_pc_08.png" alt="장안대학교"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>장안대학교</span>
-                                <p>재구축</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <!-- 탭2: uiux -->
-                <div class="swiper mySwiper tablist" data-group="uiux">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="sub_app01.html">
-                                <figure><img src="img/design_app_01.png" alt="SK증권"></figure>
-                            </a>
-                            <div class="img_txt"><span>주파수 3.0</span>
-                                <p>추가개발 &middot; 운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_app02.html">
-                                <figure><img src="img/design_app_02.png" alt="주파수웰스"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>주파수웰스</span>
-                                <p>추가개발 &middot; 운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_app03.html">
-                                <figure><img src="img/design_app_03.png" alt="SK증권앱"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>SK증권 앱</span>
-                                <p>운영</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_app04.html">
-                                <figure><img src="img/design_app_04.png" alt="시럽웰스"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>시럽웰스</span>
-                                <p>추가개발 &middot; 운영</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="pagination">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <!-- 탭3: banner -->
-                <div class="swiper mySwiper tablist" data-group="banner">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="sub_event01.html">
-                                <figure><img src="img/design_event_01.png" alt="이벤트01"></figure>
-                            </a>
-                            <div class="img_txt"><span>DLB청약 이벤트</span>
-                                <p>2024.10</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_event02.html">
-                                <figure><img src="img/design_event_02.png" alt="이벤트02"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>미국주식 이벤트</span>
-                                <p>2024.07</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_event03.html">
-                                <figure><img src="img/design_event_03.png" alt="이벤트03"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>국내주식 대여 신규가입 이벤트</span>
-                                <p>2023.05</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_event04.html">
-                                <figure><img src="img/design_event_04.png" alt="이벤트04"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>SK증권 x 뱅크샐러드 이벤트</span>
-                                <p>2022.10</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="sub_event05.html">
-                                <figure><img src="img/design_event_05.png" alt="이벤트05"></figure>
-                            </a>
-                            <div class="img_txt">
-                                <span>휴면고객 이벤트</span>
-                                <p>2021.05</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="pagination">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- 코딩파트 -->
         <div class="coding">
             <div class="innerBox">
@@ -321,8 +138,8 @@
                                 <h2>HTML</h2>
                                 <div class="videoBox">
                                     <video muted loop autoplay playsinline webkit-playsinline>
-  <source src="img/html_h2motion2.mp4" type="video/mp4">
-</video>
+                                        <source src="img/html_h2motion2.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
                             <strong>더이상 <em> &#123; 디자이너 &#125;</em>만은 아닙니다.</strong>
@@ -342,7 +159,8 @@
                                     <p>사용언어 : html, css</p>
                                     <p>라이브러리 : jquery, swiper</p>
                                     <div class="btnWrap">
-                                        <a class="btn site" target="_blank" href="https://eun90615-arch.github.io/ediya_clone/">사이트 뷰</a>
+                                        <a class="btn site" target="_blank"
+                                            href="https://eun90615-arch.github.io/ediya_clone/">사이트 뷰</a>
                                         <!-- <a class="btn code" href="#">코드 리뷰</a> -->
                                     </div>
                                 </div>
@@ -380,33 +198,210 @@
                     </section>
                 </div>
             </div>
-            </section>
 
-            <!-- 빈영역 -->
-            <div class="contact" id="sub_contact">
-                <div class="innerBox">
-                    <h2 class="subtitle">CONTACT</h2>
-                    <span>함께 일할 디자이너를 찾고 계신가요 ?? </span>
-                    <p>E-Mail : eun90615@gmail.com</p>
-                    <a href="mailto:eun90615@gmail.com">
-                        <p>메일 보내기</p>
-                    </a>
+        </div>
+        <!-- 디자인 파트 -->
+        <div class="design" id="sub_design">
+            <div class="innerBox">
+                <h2 class="subtitle">DESIGN</h2>
+                <ul class="tab">
+                    <li class="tab-btn on" data-target="homepage">홈페이지</li>
+                    <li class="tab-btn" data-target="uiux">UI/UX</li>
+                    <li class="tab-btn" data-target="banner">EVENT</li>
+                </ul>
+                <div class="designlist">
+                    <!-- 새로 적용 -->
+                    <div class="list on" data-group="homepage">
+                        <ul>
+                            <li>
+                                <a href="sub01.html">
+                                    <figure><img src="img/design_pc_01.png" alt="SK증권"></figure>
+                                </a>
+                                <div class="img_txt"><span>SK증권</span>
+                                    <p>추가개발 &middot; 운영</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub02.html">
+                                    <figure><img src="img/design_pc_02.png" alt="인천대교"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>인천대교</span>
+                                    <p>재구축 &middot; 운영</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub03.html">
+                                    <figure><img src="img/design_pc_03.png" alt="한울타리"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>서울시 한울타리</span>
+                                    <p>추가개발 &middot; 운영</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub04.html">
+                                    <figure><img src="img/design_pc_04.png" alt="리줌"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>리줌</span>
+                                    <p>신규 구축</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub05.html">
+                                    <figure><img src="img/design_pc_05.png" alt="강남초이스병원"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>강남초이스 병원</span>
+                                    <p>메인 &middot; 서브 고도화</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub06.html">
+                                    <figure><img src="img/design_pc_06.png" alt="스마스"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>SMAS</span>
+                                    <p>신규 구축</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub07.html">
+                                    <figure><img src="img/design_pc_07.png" alt="샤블랑"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>샤블랑</span>
+                                    <p>신규 구축</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="sub08.html">
+                                    <figure><img src="img/design_pc_08.png" alt="장안대학교"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>장안대학교</span>
+                                    <p>재구축</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list" data-group="uiux">
+                        <ul>
+                            <li>
+                                <a href="sub_app01.html">
+                                    <figure><img src="img/design_app_01.png" alt="SK증권"></figure>
+                                </a>
+                                <div class="img_txt"><span>주파수 3.0</span>
+                                    <p>추가개발 &middot; 운영</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="sub_app02.html">
+                                    <figure><img src="img/design_app_02.png" alt="주파수웰스"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>주파수웰스</span>
+                                    <p>추가개발 &middot; 운영</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_app03.html">
+                                    <figure><img src="img/design_app_03.png" alt="SK증권앱"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>SK증권 앱</span>
+                                    <p>운영</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_app04.html">
+                                    <figure><img src="img/design_app_04.png" alt="시럽웰스"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>시럽웰스</span>
+                                    <p>추가개발 &middot; 운영</p>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="list" data-group="event">
+                        <ul>
+                            <li>
+                                <a href="sub_event01.html">
+                                    <figure><img src="img/design_event_01.png" alt="이벤트01"></figure>
+                                </a>
+                                <div class="img_txt"><span>DLB청약 이벤트</span>
+                                    <p>2024.10</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_event02.html">
+                                    <figure><img src="img/design_event_02.png" alt="이벤트02"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>미국주식 이벤트</span>
+                                    <p>2024.07</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_event03.html">
+                                    <figure><img src="img/design_event_03.png" alt="이벤트03"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>국내주식 대여 신규가입 이벤트</span>
+                                    <p>2023.05</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_event04.html">
+                                    <figure><img src="img/design_event_04.png" alt="이벤트04"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>SK증권 x 뱅크샐러드 이벤트</span>
+                                    <p>2022.10</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="sub_event05.html">
+                                    <figure><img src="img/design_event_05.png" alt="이벤트05"></figure>
+                                </a>
+                                <div class="img_txt">
+                                    <span>휴면고객 이벤트</span>
+                                    <p>2021.05</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-
-
-
+        </div>
+        <!-- 빈영역 -->
+        <div class="contact" id="sub_contact">
+            <div class="innerBox">
+                <h2 class="subtitle">CONTACT</h2>
+                <span>함께 일할 디자이너를 찾고 계신가요 ?? </span>
+                <p>E-Mail : eun90615@gmail.com</p>
+                <a href="mailto:eun90615@gmail.com">
+                    <p>메일 보내기</p>
+                </a>
+            </div>
         </div>
 
     </div>
-    </div>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -415,9 +410,6 @@
     <script src="js/portfolio.js"></script>
 
 
-    <script>
-
-    </script>
 </body>
 
 </html>
