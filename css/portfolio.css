@@ -359,6 +359,9 @@ header .mobilegnb{
         opacity: 0;
         transform: translateY(2.4rem);
     }
+    .coding .left {
+    margin: 0 0 0 0;
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -379,13 +382,14 @@ header .mobilegnb{
 }
 
 .coding .right .sec {
+    width: 100%;
     margin-bottom: var(--gap);
 }
 .coding .right .sec .scrollText {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 4rem;
+    padding: 4rem 2rem;
 }
 .coding .right .sec span {
     font-size: var(--h3);
