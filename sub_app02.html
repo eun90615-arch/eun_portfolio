@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/sub_design.css">
     <link rel="stylesheet" href="css/sub_design_common.css">
+    <link rel="stylesheet" href="css/resizing.css">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -19,13 +20,29 @@
 <body>
     <div class="wrap sub_app02">
         <header>
-            <h1><a href="index.html">SUNGEUN KIM</a></h1>
-            <ul>
-                <li><a href="index.html#sub_about">ABOUT</a></li>
-                <li><a href="index.html#sub_design">DESIGN</a></li>
-                <li><a href="index.html#scrollArea">HTML</a></li>
-                <li><a href="index.html#sub_contact">CONTACT</a></li>
-            </ul>
+            <div class="PCgnb">
+                <h1><a href="#mainimg">SUNGEUN KIM</a></h1>
+                <ul>
+                    <li><a href="#sub_about">ABOUT</a></li>
+                    <li><a href="#pinPanel">HTML</a></li>
+                    <li><a href="#sub_design">DESIGN</a></li>
+                    <li><a href="#sub_contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="mobilegnb">
+                <div class="overlay"></div>
+                <h1><a href="#mainimg">SUNGEUN KIM</a></h1>
+                <img class="menubtn" src="img/common_ico_menu_bk.png" alt="">
+                <div class="submenu ">
+                    <img class="closebtn" src="img/common_ico_close.png" alt="">
+                    <ul>
+                        <li><a href="#sub_about">ABOUT</a></li>
+                        <li><a href="#pinPanel">HTML</a></li>
+                        <li><a href="#sub_design">DESIGN</a></li>
+                        <li><a href="#sub_contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <div class="sub_main">
             <div class="innerBox">

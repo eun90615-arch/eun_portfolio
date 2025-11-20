@@ -18,7 +18,7 @@
 }
 
 .sub01 .sub_main{
-    background: url(../img/sub01_visualbg01.png) no-repeat center/cover;
+    background: url(../img/sub01_visualbg01.png) no-repeat center center / cover;
 }
 .sub01 .cont02{
     background: #fff6f4;

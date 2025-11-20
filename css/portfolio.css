@@ -113,7 +113,7 @@ header .mobilegnb{
 
 .mainVisual .innerBox .titleBox p {
     font-size: var(--subtitle);
-    line-height: 3;
+    line-height: 1.5;
     color: var(--main);
     text-align: center;
 }
@@ -124,7 +124,7 @@ header .mobilegnb{
     justify-content: center;
     align-items: center;
     height: 9.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* about */
@@ -198,7 +198,7 @@ header .mobilegnb{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 6rem 0;
+    margin: 4rem 0;
     cursor: pointer;
 }
 .design .innerBox .tab li{
@@ -335,7 +335,6 @@ header .mobilegnb{
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     align-items: start;
-    margin-bottom: 4rem;
 }
 /* 왼쪽 화면: 항상 화면높이 100포, 내부는 스크롤없이 고정 */
 .left .panel {

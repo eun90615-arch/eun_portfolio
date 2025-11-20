@@ -96,22 +96,30 @@
         min-height: 500px;
     }
 }
-
 @media (max-width: 768px) {
     html {
-        font-size: 50%;
-        /* 1rem = 8px */
+        font-size: 56.25%;
+        /* 1rem = 9px */
+        
     }
 
     /* common */
     .subtitle {
-        padding: 8.75rem 0 3.75rem;
+        padding: 5.5rem 0 3.75rem;
         margin: 0 auto;
         display: block;
         text-align: center;
     }
+    .innerBox {
+        max-width: 94%;
+        margin: 0 auto;
+    }
 
     /* header */
+    header h1 {
+        font-size: var(--subtitle);
+    }
+
     header .mobilegnb {
         width: 100%;
         height: 8rem;
@@ -122,8 +130,9 @@
         box-sizing: border-box;
         z-index: 10;
         background: rgba(255, 255, 255, 0.952);
-        position: fixed; 
-        top:0; left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     header .mobilegnb .overlay {
@@ -146,7 +155,7 @@
     }
 
     header .mobilegnb>img {
-        width: 5rem;
+        width: 4.2rem;
     }
 
     header .mobilegnb .submenu {
@@ -156,7 +165,7 @@
         width: 60%;
         height: 100vh;
         display: block;
-        background: var(--gray3);
+        background: var(--bg);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -173,19 +182,19 @@
     }
 
     header .mobilegnb .submenu ul li {
-        font-size: 30px;
+        font-size: 3.1rem;
         font-weight: 500;
         text-align: center;
-        line-height: 4;
-        color: var(--white);
+        line-height: 3;
+        color: var(--black);
     }
 
     header .mobilegnb .submenu>img {
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 40px;
-        height: 40px;
+        width: 4.2rem;
+        height: 4.2rem;
         cursor: pointer;
     }
 
@@ -194,17 +203,17 @@
     }
 
     .mainVisual .innerBox .titleBox {
-        width: 400px;
+        width: 100%;
     }
 
     .mainVisual .innerBox .titleBox h2 {
         width: 100%;
         height: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
     .mainVisual .innerBox .titleBox h2 figure {
-        height: 40px;
+        height: 8rem;
     }
 
     .mainVisual .innerBox .titleBox h2 figure img {
@@ -212,17 +221,88 @@
     }
 
     /* about */
+    
     .about figure {
         width: 55%;
     }
+     .about .aboutBox {
+        display: flex;
+        justify-content: space-between;
+        gap: 3.3rem;
+    }
+    .about .aboutBox .txtBox .aboutText {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3.3rem;
+    color: #fff;
+}
 
+    .about .aboutBox .txtBox .aboutText li span {
+        font-size: var(--txtM_1);
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 1.75rem;
+    }
 
     /* design */
     .design .designlist ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2vw;
+    }
+    .design .designlist .img_txt p {
+    font-size: var(--txtR_2);
+    line-height: 2;
+    color: var(--gray4);
+}
+
+}
+@media (max-width: 480px) {
+    html {
+         font-size: 50%; 
+        /* 1rem = 8px */
+    }
+    .innerBox {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    /* main */
+    .mainVisual .innerBox .titleBox p {
+    font-size: var(--txtR_1);
+}
+    .mainVisual .innerBox .titleBox h2 figure {
+        height: 5.5rem;
     }
 
-
+    /* about */
+    .about{
+        height: 100%;
+    }
+    .about figure {
+        width: 100%;
+    }
+    .about .aboutBox .txtBox .aboutText {
+    display: grid;
+            grid-template-columns: repeat(1, auto);
+    color: #fff;
+}
+    /* design */
+    .design .designlist ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 375px){
+    .coding .left {
+    margin: 0 0 0 0;
+}
+    .coding .right .sec .scrollText {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap: 20px;
+    padding: 4rem 4rem;
+}
 }
