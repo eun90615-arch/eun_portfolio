@@ -215,19 +215,25 @@ $('.closebtn, .overlay').on('click', function(){
   $('.overlay').removeClass('on');
 });
 
-// ✅ 메뉴 내 링크 클릭 시 → 해당 섹션 이동 + 메뉴 닫힘
 $('.submenu ul li a').on('click', function(e){
-  e.preventDefault(); // 기본 앵커 이동 막기
 
-  let target = $(this).attr('href'); // 클릭된 링크의 href 추출
+    let href = $(this).attr('href');
 
-  // 메뉴 닫기
-  $('.submenu').removeClass('on');
-  $('.overlay').removeClass('on');
+    // ⚠️ index.html로 이동해야 하는 링크는 막으면 안 됨
+    if (href.includes("index.html")) {
+        return;  // 기본 이동 허용
+    }
 
-  // 부드럽게 스크롤 이동 (header 높이 보정)
-  let headerHeight = $('header').outerHeight();
-  $('html, body').animate({
-    scrollTop: $(target).offset().top - headerHeight
-  }, 600); // 600ms 동안 이동
+    // 동일 페이지 내 이동이면 preventDefault 적용
+    e.preventDefault();
+
+    // 메뉴 닫기
+    $('.submenu').removeClass('on');
+    $('.overlay').removeClass('on');
+
+    // 부드러운 스크롤
+    let headerHeight = $('header').outerHeight();
+    $('html, body').animate({
+        scrollTop: $(href).offset().top - headerHeight
+    }, 600);
 });
