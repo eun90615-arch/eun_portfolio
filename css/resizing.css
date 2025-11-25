@@ -7,7 +7,10 @@
 
     header .PCgnb .gnbinner {
         width: 90%;
-        padding: 0 3rem;
+    }
+    .sub_main .btn {
+    padding: 16px 20px;
+    margin: 6rem 0 2rem;
     }
 }
 
@@ -38,14 +41,33 @@
         margin: 0 auto;
     }
 
-   
-    
-    
+    /* sub_common============================= */
+    .sub_main .innerBox .backbtn {
+        margin-bottom: 0;
+    }
 
+    .sub_main .innerBox .sub_title {
+        color: var(--white);
+        margin: 0 0 6rem;
+    }
+
+    
+}
+
+@media (min-width: 1025px) {
+
+    /* main============================== */
+    /* HTML - PC에서만 숨김 초기값(등장 애니메이션용)  */
+    .reveal {
+        opacity: 0;
+        transform: translateY(2.4rem);
+    }
 }
 
 /* 태블릿 */
 @media screen and (max-width: 1024px) {
+
+    /* main============================= */
     * {
         box-sizing: border-box;
     }
@@ -80,8 +102,6 @@
     header .PCgnb ul {
         gap: 4rem;
     }
-
-
 
     .about {
         margin: 0 auto;
@@ -121,6 +141,17 @@
         min-height: 500px;
     }
 
+    .grid {
+        grid-template-columns: 1fr
+    }
+
+    .left .panel {
+        height: auto;
+        /* 모바일에서는 자연스러운 흐름 */
+        overflow: visible;
+        /* 필요 시 내부 높이만큼 확장 */
+    }
+
     /* sub_design_common ==========================*/
     .sub_main {
         aspect-ratio: 16 / 10;
@@ -136,7 +167,6 @@
     html {
         font-size: 56.25%;
         /* 1rem = 9px */
-
     }
 
     /* common */
@@ -191,10 +221,9 @@
         visibility: visible;
     }
 
-    header .mobilegnb>img {
+    header .mobilegnb img {
         width: 4.2rem;
     }
-
     header .mobilegnb .submenu {
         position: fixed;
         top: 0;
@@ -296,22 +325,40 @@
         color: var(--gray4);
     }
 
+
     /* sub_design_common========================= */
     .sub_main {
         aspect-ratio: 16 / 12;
     }
+    .sub_main .innerBox .backbtn{
+    display: none;
+    }
     .sub_main .innerBox .sub_title {
-    color: var(--white);
-    margin: 6rem 0 3rem;
-}
+        color: var(--white);
+        margin: 2rem 0 3rem;
+    }
+
     .cont02 .innerBox {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .cont02 .innerBox .img01{width: 100%;}
-    .cont02 .innerBox .imgapp01{width: 100%;}
-    .cont02 .innerBox .imgapp02{width: 100%;}
+
+    .cont02 .innerBox .img01 {
+        width: 100%;
+    }
+
+    .cont02 .innerBox .imgapp01 {
+        width: 100%;
+    }
+
+    .cont02 .innerBox .imgapp02 {
+        width: 100%;
+    }
+    /* subevent==================================== */
+    .subevent .sub_main .innerBox .sub_title{
+    margin: 16rem 0 6rem;
+}
 
 }
 
@@ -357,13 +404,14 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* sub_design_common======================== */
     .sub_main {
         aspect-ratio: 16 / 16;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 412px) {
     .coding .left {
         margin: 0 0 0 0;
     }

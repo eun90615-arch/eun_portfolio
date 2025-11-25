@@ -9,19 +9,17 @@
 /* 메인 */
 .sub_main{
     max-width: 100%;
-    /* height: 820px; */
-    aspect-ratio: 16 / 6;
+    aspect-ratio: 16 / 7;
 }
-.sub_main .backbtn{
-    position: fixed;
-    right: 2rem;
-    top: 10rem;
+.sub_main .innerBox .backbtn{
+    text-align: right;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+    margin-bottom: 5rem;
 }
 .sub_main .innerBox{
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 .sub_main .innerBox .sub_title{
     color: var(--white);
@@ -29,22 +27,20 @@
 }
 .sub_main .innerBox .sub_title h2{
     font-size: var(--h1);
-    margin-bottom: 16px;
 }
 .sub_main .innerBox .sub_title span{
     font-size: var(--subtitle);
     font-weight: 500;
 }
 .sub_main .btn {
+    width: fit-content;
     color: var(--white);
     font-size: var(--txtR_3);
     font-weight: 500;
     padding: 18px 26px;
-    box-sizing: border-box;
     border: 1px solid var(--white);
     border-radius: 14px;
-    display: inline-block;
-    margin: 90px 0 30px;
+    margin: 8rem 0 3rem;
 }
 .sub_main .btn:hover{
     background: var(--white);
@@ -140,7 +136,15 @@
 }
 .subevent .sub_main{
     max-width: 100%;
-    height: 100%;
+    aspect-ratio:inherit;
+}
+.sub_main .innerBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subevent .sub_main .innerBox .backbtn{
+    margin: 12rem 0 0;
 }
 .subevent .sub_main .innerBox .sub_title{
     width: 100%;    
@@ -149,7 +153,7 @@
     align-items: end;
     color: var(--black);
     padding: 0 0 30px;
-    margin: 130px 0 100px;
+    margin: 4rem 0 6rem;
     position: relative;
 }
 .subevent .sub_main .innerBox .sub_title::after{
@@ -168,4 +172,14 @@
     padding: 0 ;
     width: 100%;
     text-align: center;
+}
+.subevent .cont01 .innerBox{
+    display: flex;
+    justify-content: center;
+}
+.subevent .cont01 .innerBox .imgapp01{
+    width: 70rem;
+}
+.subevent .cont01 .innerBox .imgapp01 img{
+    width: 100%;
 }

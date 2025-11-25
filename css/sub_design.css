@@ -13,6 +13,7 @@
     margin-bottom: 0;
 }
 .sub01 .sub_main .btn {
+    display: inline-block;
     color: var(--black);
     border: 1px solid var(--black);
 }
@@ -136,7 +137,6 @@
 }
 .sub08 .sub_main .innerBox .sub_title{
     color: var(--black);
-    width: 500px;
 }
 .sub08 .sub_main .innerBox .sub_txtBox{
     color: var(--black);
@@ -159,7 +159,6 @@
 }
 .sub_app01 .sub_main .innerBox .sub_title{
     color: var(--black);
-    width: 500px;
 }
 .sub_app01 .sub_main .innerBox .sub_txtBox{
     color: var(--black);

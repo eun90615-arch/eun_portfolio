@@ -358,26 +358,6 @@ header .mobilegnb{
     transform: none;
 }
 
-/* PC에서만 숨김 초기값(등장 애니메이션용) */
-@media (min-width: 1025px) {
-    .reveal {
-        opacity: 0;
-        transform: translateY(2.4rem);
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .grid {
-        grid-template-columns: 1fr
-    }
-
-    .left .panel {
-        height: auto;
-        /* 모바일에서는 자연스러운 흐름 */
-        overflow: visible;
-        /* 필요 시 내부 높이만큼 확장 */
-    }
-}
 .nothing {
     height: 100rem;
     background: blue;
