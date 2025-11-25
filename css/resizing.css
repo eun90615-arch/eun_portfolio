@@ -222,13 +222,13 @@
     }
 
     header .mobilegnb img {
-        width: 4.2rem;
+        width: 3.4rem;
     }
     header .mobilegnb .submenu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 60%;
+        width: 70%;
         height: 100vh;
         display: block;
         background: var(--bg);
@@ -248,7 +248,7 @@
     }
 
     header .mobilegnb .submenu ul li {
-        font-size: 3.1rem;
+        font-size: var(--txtM_1);
         font-weight: 500;
         text-align: center;
         line-height: 3;
@@ -259,8 +259,8 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 4.2rem;
-        height: 4.2rem;
+        width: 3.4rem;
+        height: 3.4rem;
         cursor: pointer;
     }
 
