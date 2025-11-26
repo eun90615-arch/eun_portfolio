@@ -8,9 +8,10 @@
     header .PCgnb .gnbinner {
         width: 90%;
     }
+
     .sub_main .btn {
-    padding: 16px 20px;
-    margin: 6rem 0 2rem;
+        padding: 16px 20px;
+        margin: 6rem 0 2rem;
     }
 }
 
@@ -41,7 +42,7 @@
         margin: 0 auto;
     }
 
-    /* sub_common============================= */
+    /* sub_common(1320px)============================= */
     .sub_main .innerBox .backbtn {
         margin-bottom: 0;
     }
@@ -51,7 +52,7 @@
         margin: 0 0 6rem;
     }
 
-    
+
 }
 
 @media (min-width: 1025px) {
@@ -67,7 +68,7 @@
 /* 태블릿 */
 @media screen and (max-width: 1024px) {
 
-    /* main============================= */
+    /* main(1024px)============================= */
     * {
         box-sizing: border-box;
     }
@@ -84,7 +85,7 @@
         text-align: center;
     }
 
-    /* header */
+    /* header(1024px) */
     header .PCgnb {
         position: fixed;
         top: 0;
@@ -129,14 +130,14 @@
         margin: 0 auto;
     }
 
-    /* design */
+    /* design(1024px) */
     .design .designlist ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2vw;
     }
 
-    /* HTML */
+    /* HTML(1024px) */
     .coding #pinPanel {
         min-height: 500px;
     }
@@ -152,7 +153,7 @@
         /* 필요 시 내부 높이만큼 확장 */
     }
 
-    /* sub_design_common ==========================*/
+    /* sub_design_common(1024px) ==========================*/
     .sub_main {
         aspect-ratio: 16 / 10;
     }
@@ -164,12 +165,11 @@
 }
 
 @media (max-width: 768px) {
+    /* common(768px)==================================== */
     html {
         font-size: 56.25%;
         /* 1rem = 9px */
     }
-
-    /* common */
     .subtitle {
         padding: 5.5rem 0 3.75rem;
         margin: 0 auto;
@@ -182,7 +182,10 @@
         margin: 0 auto;
     }
 
-    /* header */
+    /* header (768px)*/
+    header .PCgnb {
+        display: none;
+    }
     header h1 {
         font-size: var(--subtitle);
     }
@@ -215,20 +218,20 @@
         z-index: 10;
     }
 
-    /* 메뉴 열릴 때 overlay 표시 */
     header .mobilegnb .overlay.on {
         opacity: 1;
         visibility: visible;
     }
 
     header .mobilegnb img {
-        width: 3.4rem;
+        width: 5.3rem;
     }
+
     header .mobilegnb .submenu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 60%;
         height: 100vh;
         display: block;
         background: var(--bg);
@@ -248,7 +251,7 @@
     }
 
     header .mobilegnb .submenu ul li {
-        font-size: var(--txtM_1);
+        font-size: 3.1rem;
         font-weight: 500;
         text-align: center;
         line-height: 3;
@@ -259,15 +262,12 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 3.4rem;
-        height: 3.4rem;
+        width: 5.3rem;
+        height: 5.3rem;
         cursor: pointer;
     }
-
-    header .PCgnb {
-        display: none;
-    }
-
+    /* index(768px)================================= */
+    /* main(768px) */
     .mainVisual .innerBox .titleBox {
         width: 100%;
     }
@@ -283,10 +283,10 @@
     }
 
     .mainVisual .innerBox .titleBox h2 figure img {
-        height: 100%;
+        width: 100%;
     }
 
-    /* about */
+    /* about(768px) */
 
     .about figure {
         width: 55%;
@@ -313,7 +313,7 @@
         margin-bottom: 1.75rem;
     }
 
-    /* design */
+    /* design(768px) */
     .design .designlist ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -325,14 +325,46 @@
         color: var(--gray4);
     }
 
+    /* HTML(768px) */
+    .coding .left strong {
+        font-size: var(--subtitle);
+    }
 
-    /* sub_design_common========================= */
+    .coding .left strong em {
+        font-size: var(--h2);
+    }
+
+    .left .panel {
+        padding: 0;
+    }
+
+    /* content(768px) */
+    .contact .innerBox .subtitle {
+        margin: 10rem 0 10rem 0;
+    }
+
+    .contact .innerBox span {
+        font-size: var(--h3);
+    }
+
+    .contact .innerBox>p {
+        font-size: var(--txtM_1);
+        font-weight: 400;
+    }
+
+    /* sub_design_common(768px)========================= */
     .sub_main {
         aspect-ratio: 16 / 12;
     }
-    .sub_main .innerBox .backbtn{
-    display: none;
+
+    .sub_main .innerBox {
+        padding-top: 8rem;
     }
+
+    .sub_main .innerBox .backbtn {
+        display: none;
+    }
+
     .sub_main .innerBox .sub_title {
         color: var(--white);
         margin: 2rem 0 3rem;
@@ -355,14 +387,47 @@
     .cont02 .innerBox .imgapp02 {
         width: 100%;
     }
-    /* subevent==================================== */
-    .subevent .sub_main .innerBox .sub_title{
-    margin: 16rem 0 6rem;
-}
 
+    /* subevent(768px)==================================== */
+    .subevent .sub_main .innerBox .sub_title {
+        margin: 16rem 0 6rem;
+    }
+
+    .sub_main .innerBox .sub_title h2 {
+        font-size: var(--h2);
+    }
+
+    .sub01 .sub_main .btn {
+        background: var(--black);
+        color: var(--white);
+        padding: 1.3rem 1.7rem;
+        margin: 4.4rem 0 2.2rem;
+    }
+
+    .subevent .sub_main .innerBox .sub_title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        color: var(--black);
+        padding: 0 0 30px;
+        margin: 5rem 0 5rem;
+        position: relative;
+    }
+
+    .subevent .sub_main .innerBox .sub_txtBox {
+        flex-direction: row;
+    }
+
+    .subevent .sub_main .innerBox .sub_title {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    /* common(480px)================================= */
     html {
         font-size: 50%;
         /* 1rem = 8px */
@@ -371,11 +436,15 @@
     .innerBox {
         max-width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 4rem;
         box-sizing: border-box;
     }
 
-    /* main */
+    header .mobilegnb img {
+        width: 6rem;
+    }
+    /* index(480px)================================= */
+    /* main(480px) */
     .mainVisual .innerBox .titleBox p {
         font-size: var(--txtR_1);
     }
@@ -384,7 +453,7 @@
         height: 5.5rem;
     }
 
-    /* about */
+    /* about(480px) */
     .about {
         height: 100%;
     }
@@ -399,16 +468,61 @@
         color: #fff;
     }
 
-    /* design */
+    .about .aboutBox .txtBox .aboutText li span {
+        font-size: var(--txtR_1);
+    }
+
+    /* HTML(480px) */
+    .coding .right .sec span {
+        font-size: var(--subtitle);
+        font-weight: 600;
+    }
+
+    .coding .right .sec p {
+        font-size: var(--txtR_2);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* design(480px) */
+    .design .innerBox .tab li {
+        padding: 12px 14px;
+    }
+
+    .design .innerBox .tab {
+        gap: 14px;
+    }
+
     .design .designlist ul {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* sub_design_common======================== */
+    /* sub_design_common(480px)======================== */
+    .sub_main>.innerBox {
+        padding: 8rem 4rem 0;
+    }
+
+    .subtitle {
+        font-size: var(--h3);
+    }
+
     .sub_main {
         aspect-ratio: 16 / 16;
     }
+
+    .sub_main .innerBox .sub_txtBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sub_main .innerBox p {
+        font-size: var(--txtR_3);
+    }
+    .cont02 .innerBox .img02 {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 412px) {

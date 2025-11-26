@@ -162,7 +162,7 @@ header .mobilegnb{
 }
 
 .about .aboutBox .txtBox .aboutText li span {
-    font-size: var(--subtitle);
+    font-size: var(--txtM_1);
     font-weight: 500;
     display: inline-block;
     margin-bottom: 3rem;
@@ -170,9 +170,8 @@ header .mobilegnb{
 
 .about .aboutBox .txtBox .aboutText li ul li {
     font-size: var(--txtR_2);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.7;
-
 }
 
 .about .aboutBox .txtBox .aboutText {
