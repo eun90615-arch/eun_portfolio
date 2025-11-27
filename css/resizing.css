@@ -187,7 +187,7 @@
         display: none;
     }
     header h1 {
-        font-size: var(--txtR_1);
+        font-size: var(--txtM_1);
     }
 
     header .mobilegnb {
