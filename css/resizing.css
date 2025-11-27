@@ -187,7 +187,7 @@
         display: none;
     }
     header h1 {
-        font-size: var(--subtitle);
+        font-size: var(--txtR_1);
     }
 
     header .mobilegnb {
@@ -224,14 +224,16 @@
     }
 
     header .mobilegnb img {
-        width: 5.3rem;
+        width: 3.1rem; /* 28px */
+        padding: 1.1rem;
+        box-sizing: content-box;
     }
 
     header .mobilegnb .submenu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 60%;
+        width: 70%;
         height: 100vh;
         display: block;
         background: var(--bg);
@@ -262,8 +264,8 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 5.3rem;
-        height: 5.3rem;
+        width: 3.5rem;/* 32px */
+        height: 3.5rem;
         cursor: pointer;
     }
     /* index(768px)================================= */
@@ -441,7 +443,7 @@
     }
 
     header .mobilegnb img {
-        width: 6rem;
+        width: auto;
     }
     /* index(480px)================================= */
     /* main(480px) */

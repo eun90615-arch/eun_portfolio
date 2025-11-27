@@ -3,7 +3,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 /* ========================================================== */
-
+window.addEventListener('pageshow', function(event) {
+    // 뒤로가기, 캐시 복원 시에도 top으로 이동
+    if (event.persisted) {
+        window.scrollTo(0, 0);
+    }
+});
 /* from() -> 처음에 opacity:0, y:50 에서 시작 -> 현재 원래 위치와 불투명도 자연스럽게 나타남 */
 gsap.from('.title figure', {
     opacity: 0,

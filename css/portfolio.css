@@ -158,7 +158,11 @@ header .mobilegnb{
 
 .about .aboutBox .txtBox .aboutText li:first-child ul {
     display: flex;
+    justify-content: flex-start;
     gap: 1rem;
+}
+.about .aboutBox .txtBox .aboutText li:first-child ul img{
+    width: 6rem;
 }
 
 .about .aboutBox .txtBox .aboutText li span {
@@ -177,7 +181,7 @@ header .mobilegnb{
 .about .aboutBox .txtBox .aboutText {
     width: 80rem;
     display: grid;
-            grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
     color: #fff;
 }
 
