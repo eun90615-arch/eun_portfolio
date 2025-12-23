@@ -183,9 +183,7 @@
     color: black;
 }
 /* 메인 */
-.sub_app02 .sub_main .innerBox .sub_title{
-    width: 500px;
-}
+
 .sub_app02 .sub_main{
     background: url(../img/sub_app02_visualbg01.png) no-repeat center/cover;
 }
@@ -206,9 +204,6 @@
     color: black;
 }
 /* 메인 */
-.sub_app03 .sub_main .innerBox .sub_title{
-    width: 500px;
-}
 .sub_app03 .sub_main{
     background: url(../img/sub_app03_visualbg01.png) no-repeat center/cover;
 }
@@ -229,9 +224,6 @@
     color: black;
 }
 /* 메인 */
-.sub_app04 .sub_main .innerBox .sub_title{
-    width: 500px;
-}
 .sub_app04 .sub_main{
     background: url(../img/sub_app04_visualbg01.png) no-repeat center/cover;
 }

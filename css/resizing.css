@@ -253,7 +253,7 @@
     }
 
     header .mobilegnb .submenu ul li {
-        font-size: 3.1rem;
+        font-size: var(--txtM_1);
         font-weight: 500;
         text-align: center;
         line-height: 3;
