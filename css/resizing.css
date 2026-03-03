@@ -52,6 +52,59 @@
         margin: 0 0 6rem;
     }
 
+    /* sub_design */
+    .sub01 .cont02 .part02 .part02_img {
+        flex-direction: column;
+        padding-bottom: 80px;
+        gap: 50px;
+    }
+
+    .design {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .sub01 .cont02 .part03 .part03_img {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 20px;
+        padding-top: 80px;
+    }
+
+    .DesignSystem {
+        flex-direction: column;
+    }
+
+    .sub04 .cont02 .part02 .part02_img {
+        display: none;
+    }
+
+    .sub04 .cont02 .part02 .part02_img_mobile {
+        display: block;
+    }
+
+    .sub04 .cont02 .part02 .part02_img_mobile img {
+        padding-bottom: 40px;
+    }
+
+    .cont02_v2 .innerBox {
+        flex-direction: column;
+    }
+
+    .cont02_v2 .innerBox .img02 {
+        margin: 0 auto;
+        width: 40%;
+    }
+    .sub01 .cont02 .part03 .part03_img img:first-child{
+        padding-bottom: 0;
+    }
+    .sub01 .cont02 .part04 .part04_M{
+    display: block;
+}
+.sub01 .cont02 .part04 .part04_PC{
+    display: none;
+}
 
 }
 
@@ -165,11 +218,13 @@
 }
 
 @media (max-width: 768px) {
+
     /* common(768px)==================================== */
     html {
         font-size: 56.25%;
         /* 1rem = 9px */
     }
+
     .subtitle {
         padding: 5.5rem 0 3.75rem;
         margin: 0 auto;
@@ -186,8 +241,9 @@
     header .PCgnb {
         display: none;
     }
+
     header h1 {
-        font-size: var(--txtM_1);
+        font-size: var(--txtR_1);
     }
 
     header .mobilegnb {
@@ -224,7 +280,8 @@
     }
 
     header .mobilegnb img {
-        width: 3.1rem; /* 28px */
+        width: 3.1rem;
+        /* 28px */
         padding: 1.1rem;
         box-sizing: content-box;
     }
@@ -253,7 +310,7 @@
     }
 
     header .mobilegnb .submenu ul li {
-        font-size: var(--txtM_1);
+        font-size: 3.1rem;
         font-weight: 500;
         text-align: center;
         line-height: 3;
@@ -264,10 +321,12 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 3.5rem;/* 32px */
+        width: 3.5rem;
+        /* 32px */
         height: 3.5rem;
         cursor: pointer;
     }
+
     /* index(768px)================================= */
     /* main(768px) */
     .mainVisual .innerBox .titleBox {
@@ -429,6 +488,7 @@
 }
 
 @media (max-width: 480px) {
+
     /* common(480px)================================= */
     html {
         font-size: 50%;
@@ -445,6 +505,7 @@
     header .mobilegnb img {
         width: auto;
     }
+
     /* index(480px)================================= */
     /* main(480px) */
     .mainVisual .innerBox .titleBox p {
@@ -521,6 +582,7 @@
     .sub_main .innerBox p {
         font-size: var(--txtR_3);
     }
+
     .cont02 .innerBox .img02 {
         width: 100%;
     }
@@ -539,4 +601,15 @@
         gap: 20px;
         padding: 4rem 4rem;
     }
+    .sub_app01 .cont02 .AppPart02_2 img{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .sub_app01 .cont02 .innerBox{
+        padding-top: 60px;
+    }
+    .cont02 .part01 img:nth-child(2){
+        width: 90%;
+    }
+
 }

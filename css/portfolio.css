@@ -135,7 +135,7 @@ header .mobilegnb{
 /* about */
 .about {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #292929;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -155,38 +155,44 @@ header .mobilegnb{
     justify-content: space-between;
     gap: 5rem;
 }
-
-.about .aboutBox .txtBox .aboutText li:first-child ul {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-}
-.about .aboutBox .txtBox .aboutText li:first-child ul img{
-    width: 6rem;
-}
-
-.about .aboutBox .txtBox .aboutText li span {
-    font-size: var(--txtM_1);
-    font-weight: 500;
-    display: inline-block;
-    margin-bottom: 3rem;
-}
-
-.about .aboutBox .txtBox .aboutText li ul li {
-    font-size: var(--txtR_2);
-    font-weight: 300;
-    line-height: 1.7;
-}
-
 .about .aboutBox .txtBox .aboutText {
     width: 80rem;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    color: #fff;
+    color: var(--white);
 }
 
-.about .aboutBox .txtBox .aboutText>li {
+.about .aboutBox .txtBox .aboutText li:nth-child(4) ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.about .aboutBox .txtBox .aboutText li:nth-child(4) ul img{
+    width: 6rem;
+}
+
+.about .aboutBox .txtBox .aboutText li span {
+    font-size: var(--txtR_1);
+    font-weight: 500;
+    display: inline-block;
     margin-bottom: 2rem;
+}
+
+.about .aboutBox .txtBox .aboutText li ul li {
+    font-size: var(--txtR_3);
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #ddd;
+}
+.about .aboutBox .txtBox .aboutText li ul li em{
+    font-size: var(--txtS_1);
+    font-weight: 200;
+}
+
+
+.about .aboutBox .txtBox .aboutText>li {
+    margin-bottom: 4rem;
 }
 
 /* design ======================= */
