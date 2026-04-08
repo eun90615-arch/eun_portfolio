@@ -55,7 +55,7 @@
 }
 
 .sub01 .sub_main{
-    background: url(../img/sub01_visualbg01.png) no-repeat center / cover;
+    background: url(../img/sub01_visualbg01.png) no-repeat right center / cover;
 }
 .sub01 .sub_main .btn:hover{
     background: var(--black);
@@ -415,3 +415,4 @@
 .sub_app04 .cont02 .innerBox figure{
     margin: 100px auto;
 }
+

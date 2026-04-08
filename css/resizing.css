@@ -4,7 +4,9 @@
     .innerBox {
         padding: 0 5rem;
     }
-
+    .sub_main .innerBox .backbtn{
+    right:8%;
+}
     header .PCgnb .gnbinner {
         width: 90%;
     }
@@ -20,7 +22,7 @@
         font-size: 60%;
         /* 1rem = 9.6px */
     }
-
+    
     .about .aboutBox {
         flex-direction: column;
     }

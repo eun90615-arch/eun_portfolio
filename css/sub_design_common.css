@@ -8,13 +8,17 @@
 
 /* 메인 */
 .sub_main{
-    max-width: 100%;
-    aspect-ratio: 16 / 7;
+    width: 100%;
+  max-height: 600px;
+  aspect-ratio: 1920 / 600;
+  overflow: hidden;
 }
 .sub_main .innerBox .backbtn{
-    text-align: right;
     filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
     margin-bottom: 5rem;
+    position: fixed;
+    right: 12%;
+    top: 120px;
 }
 .sub_main .innerBox{
     display: flex;
@@ -126,6 +130,10 @@
 }
 
 /* app_cont02 */
+.cont02 .innerBox{
+    
+    text-align: center;
+}
 .cont02 .innerBox .imgapp01{
     width: 450px;
     height: 100%;
@@ -138,7 +146,8 @@
     height: 100%;
 }
 .cont02 .innerBox img{
-    width: 100%;
+    width: 80%;
+    display: inline-block;
 }
 
 /* event */
@@ -164,7 +173,7 @@
     align-items: end;
     color: var(--black);
     padding: 0 0 30px;
-    margin: 4rem 0 6rem;
+    margin: 2rem 0 6rem;
     position: relative;
 }
 .subevent .sub_main .innerBox .sub_title::after{
@@ -175,6 +184,12 @@
     background: var(--black);
     position: absolute;
     bottom: 0; left: 0;
+}
+.event_backbtn{
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+    display: inline-block;
+    text-align: right;
+    margin: 10rem 0 3rem;
 }
 .subevent .sub_main .innerBox .sub_txtBox{
     color: var(--black);
